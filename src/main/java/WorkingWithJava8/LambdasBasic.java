@@ -1,9 +1,12 @@
 package WorkingWithJava8;
 
-public class LambdasBasic {
+import java.util.function.Function;
 
+public class LambdasBasic {
 	public static void main(String[] args) {
-		System.out.println("Hello from Lambdas in Java 8");
+		
+		Function<Integer, Integer> dobleValor = num -> num * 2;
+		System.out.println("La funcion dobleValor() para 8 es: " + dobleValor.apply(8));
 	}
 
 }
